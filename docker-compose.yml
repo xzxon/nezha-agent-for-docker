@@ -5,9 +5,10 @@ services:
       context: .   # 本地构建
     container_name: nezha-agent
     environment:
-      - panel_domain= #通信ip或域名
+      - domain= #通信ip或域名
       - port= #通信端口
       - secret=  #节点密钥
+      - args=  #额外参数
       #- platform= #自定义系统发行版名
       #- version= #自定义系统版本
     volumes:
